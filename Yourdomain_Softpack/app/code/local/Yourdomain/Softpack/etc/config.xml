@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Yourdomain_Softpack>
+      <version>0.1.0</version>
+    </Yourdomain_Softpack>
+  </modules>
+  <global>
+    <models>
+      <yourdomainsoftpack>
+        <class>Yourdomain_Softpack_Model</class>
+      </yourdomainsoftpack>
+    </models>
+    <resources>
+      <yourdomainsoftpack_setup>
+        <setup>
+          <module>Yourdomain_Softpack</module>
+        </setup>
+        <connection>
+          <use>core_setup</use>
+        </connection>
+      </yourdomainsoftpack_setup>
+    </resources>
+  </global>
+  <default>
+    <carriers>
+      <yourdomainsoftpack>
+        <active>1</active>
+        <allowed_methods>delivery</allowed_methods>
+        <methods>delivery</methods>
+        <sallowspecific>0</sallowspecific>
+        <model>Yourdomain_Softpack_Model_Carrier_PostDK</model>
+        <name>PostDK Softpack</name>
+        <title>PostDK Softpack</title>
+        <specificerrmsg>This shipping method is currently unavailable. If
+          you would like to ship using this shipping method, please contact
+          us.</specificerrmsg>
+        <handling_type>F</handling_type>
+      </yourdomainsoftpack>
+    </carriers>
+  </default>
+</config>
